@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # Version: 0.11
+# Programa skaito radijijo stotis is radija.txt
+# Sekanti stoti paleisti su: 'Ctrl + C' arba 'q'
 
 while true
 do
@@ -21,7 +23,6 @@ mplayer `sed -n "$eilute"p radija.txt`
 eilute=$(($eilute + 1))
 sleep 1
 echo "eilute="$eilute
-done
 
-# Pagrindiio ciklo pabaiga
-done
+done # while ciklo pabaiga
+done # pagrindinio ciklo pabaiga
