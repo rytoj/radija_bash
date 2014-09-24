@@ -1,3 +1,7 @@
+#!/bin/bash
+
+# Version: 0.11
+
 while true
 do
 
