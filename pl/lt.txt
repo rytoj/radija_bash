@@ -1,0 +1,4 @@
+http://radio.m-1.fm:80/LIETUS	Lietus
+http://power-stream.data.lt:8000/PHR	Power
+http://stream.m-1.fm:80/m1/mp3	M1
+http://radio.m-1.fm:80/M-1PLIUS	M1+
