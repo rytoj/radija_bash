@@ -53,6 +53,6 @@ echo "eilute="$eilute
 done # while ciklo pabaiga
 
 # Playlist nuolat kartojasi 
-#eilute=1
+eilute=1
 
 done # pagrindinio ciklo pabaiga
