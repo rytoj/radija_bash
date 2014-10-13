@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# This script is awesome!
 # Version: 0.12
 # Programa skaito radijijo stotis is radija.txt
 # Sekanti stoti paleisti su: 'Ctrl + C' arba 'q'
