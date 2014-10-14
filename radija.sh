@@ -1,6 +1,6 @@
 #!/bin/bash
 # This script is awesome!
-# Version: 0.12
+# Version: 0.13
 # Programa skaito radijijo stotis is radija.txt
 # Sekanti stoti paleisti su: 'Ctrl + C' arba 'q'
 
@@ -15,14 +15,19 @@
 #echo "---------------"
 #
 #
+# Darbinis katalogas
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Pagrindinis grojarastis 'pl' kataloge
-grojarastis="lt.txt"
+grojarastis="$DIR/pl/lt.txt"
 
 # Atkerpa radio stoties pavadinima ir ji atspausdina
-cut -d$'\t' -f2 pl/lt.txt|nl -n rn
+cut -d$'\t' -f2 $grojarastis|nl -n rn
 
 # Atkerpa tik radio stoties nuoroda
-stotis=`cut -d$'\t' -f1 pl/lt.txt`
+stotis=`cut -d$'\t' -f1 $grojarastis`
+
+
 
 echo $stoties_pav
 
@@ -34,8 +39,7 @@ while true
 do
 
 # Kuri skaitoma eilute 'radija.txt' dokumente
-
-eil_il=`wc -l < pl/$grojarastis`
+eil_il=`wc -l < $grojarastis`
 
 #echo "eilute"=$eilute
 #echo "eilutes_il"=$eil_il
@@ -44,7 +48,7 @@ while [ $eil_il -ge $eilute ]
 do
 
 # Nuskaitoma dokumento eilute ir pakeiciamas jos skaicius
-mplayer `sed -n "$eilute"p pl/$grojarastis`
+mplayer `sed -n "$eilute"p $grojarastis`
 
 eilute=$(($eilute + 1))
 sleep 1
