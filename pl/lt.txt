@@ -1,8 +1,5 @@
-http://radio.m-1.fm:80/LIETUS	Lietus
 http://power-stream.data.lt:8000/PHR	Power
-http://stream.m-1.fm:80/m1/mp3	M1
-http://radio.m-1.fm:80/M-1PLIUS	M1+
 http://84.46.205.13:80/rc128.mp3	RadioCentras
 http://84.46.205.13:80/zipfm128.mp3	ZipFM
-http://84.46.204.45:8000/ehr2	EuropeanHitRadio
-http://82.135.234.194/KelyjeVilnius?.wma	Kelyje
+http://netradio.ziniur.lt:80/easyfm.mp3 EasyFM
+http://82.135.234.195:8000/opus3.mp3 Opus3

@@ -15,6 +15,18 @@
 #echo "---------------"
 #
 #
+
+#Tikrinam ar sistemoje idiegtas mplayer
+type type mplayer > /dev/null 2>&1
+
+if [ $? -eq 1 ]; then
+ echo "Klaida: Nera mplayer."
+ echo "sudo apt-get install mplayer"
+ sudo apt-get install mplayer
+fi
+
+
+
 # Darbinis katalogas
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -48,6 +60,7 @@ while [ $eil_il -ge $eilute ]
 do
 
 # Nuskaitoma dokumento eilute ir pakeiciamas jos skaicius
+
 mplayer `sed -n "$eilute"p $grojarastis`
 
 eilute=$(($eilute + 1))
